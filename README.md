@@ -15,7 +15,7 @@ for cyclical learning rates is available at:
 
 ## Running
 
-`python3 runner.py` to trian the model and then `python3 analyze.py` to
+`python3 runner.py` to train the model and then `python3 analyze.py` to
 generate the video and snapshots with pca3dvis.
 
 ## Contributions
