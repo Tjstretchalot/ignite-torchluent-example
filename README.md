@@ -18,6 +18,10 @@ for cyclical learning rates is available at:
 `python3 runner.py` to train the model and then `python3 analyze.py` to
 generate the video and snapshots with pca3dvis.
 
+Example run output at 'log.txt'
+
+Analysis output: https://youtu.be/492JWqa_epo
+
 ## Contributions
 
 If you want to add more comments or clean this up further, you are welcome to

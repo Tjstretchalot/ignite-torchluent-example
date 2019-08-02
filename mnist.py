@@ -77,7 +77,7 @@ transform = torchvision.transforms.ToTensor()
 def train(lr_sweep=False):
     train_set = torchvision.datasets.MNIST('datasets/mnist', download=True, transform=transform)
     val_set = torchvision.datasets.MNIST('datasets/mnist', train=False, download=True,
-                                        transform=transform)
+                                         transform=transform)
     unstripped, model = (
         FluentModule((1, 28, 28,))
         .verbose()

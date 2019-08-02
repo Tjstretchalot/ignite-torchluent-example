@@ -1,0 +1,58 @@
+  (1, 28, 28)
+  Conv2d -> (32, 24, 24)
+  MaxPool2d -> (32, 8, 8)
+  LeakyReLU
+  Reshape -> (2048,)
+  Linear -> (64,)
+  Tanh
+  Linear -> (10,)
+Training Results - Epoch: 1, acc: 0.859, loss: 0.577
+Validation Results - Epoch: 1, acc: 0.863, loss: 0.550
+Training Results - Epoch: 2, acc: 0.922, loss: 0.293
+Validation Results - Epoch: 2, acc: 0.930, loss: 0.263
+Training Results - Epoch: 3, acc: 0.953, loss: 0.147
+Validation Results - Epoch: 3, acc: 0.957, loss: 0.155
+Training Results - Epoch: 4, acc: 0.977, loss: 0.093
+Validation Results - Epoch: 4, acc: 0.965, loss: 0.128
+Training Results - Epoch: 5, acc: 0.984, loss: 0.052
+Validation Results - Epoch: 5, acc: 0.977, loss: 0.090
+Training Results - Epoch: 6, acc: 0.992, loss: 0.061
+Validation Results - Epoch: 6, acc: 0.961, loss: 0.101
+Training Results - Epoch: 7, acc: 0.977, loss: 0.097
+Validation Results - Epoch: 7, acc: 0.980, loss: 0.072
+Training Results - Epoch: 8, acc: 0.961, loss: 0.122
+Validation Results - Epoch: 8, acc: 0.980, loss: 0.075
+Training Results - Epoch: 9, acc: 0.930, loss: 0.162
+Validation Results - Epoch: 9, acc: 0.984, loss: 0.063
+Training Results - Epoch: 10, acc: 1.000, loss: 0.030
+Validation Results - Epoch: 10, acc: 0.973, loss: 0.073
+Training Results - Epoch: 11, acc: 0.992, loss: 0.046
+Validation Results - Epoch: 11, acc: 0.965, loss: 0.111
+Training Results - Epoch: 12, acc: 0.984, loss: 0.067
+Validation Results - Epoch: 12, acc: 0.988, loss: 0.040
+Training Results - Epoch: 13, acc: 1.000, loss: 0.023
+Validation Results - Epoch: 13, acc: 0.988, loss: 0.059
+Training Results - Epoch: 14, acc: 0.992, loss: 0.041
+Validation Results - Epoch: 14, acc: 0.992, loss: 0.032
+Training Results - Epoch: 15, acc: 1.000, loss: 0.019
+Validation Results - Epoch: 15, acc: 0.984, loss: 0.055
+Training Results - Epoch: 16, acc: 0.992, loss: 0.034
+Validation Results - Epoch: 16, acc: 0.996, loss: 0.030
+Training Results - Epoch: 17, acc: 0.992, loss: 0.023
+Validation Results - Epoch: 17, acc: 0.980, loss: 0.045
+Training Results - Epoch: 18, acc: 0.992, loss: 0.039
+Validation Results - Epoch: 18, acc: 1.000, loss: 0.016
+Training Results - Epoch: 19, acc: 0.977, loss: 0.129
+Validation Results - Epoch: 19, acc: 0.996, loss: 0.023
+Training Results - Epoch: 20, acc: 0.992, loss: 0.023
+Validation Results - Epoch: 20, acc: 0.984, loss: 0.052
+Training Results - Epoch: 21, acc: 1.000, loss: 0.026
+Validation Results - Epoch: 21, acc: 0.980, loss: 0.069
+Training Results - Epoch: 22, acc: 0.992, loss: 0.030
+Validation Results - Epoch: 22, acc: 0.980, loss: 0.045
+Training Results - Epoch: 23, acc: 0.969, loss: 0.079
+Validation Results - Epoch: 23, acc: 0.984, loss: 0.066
+Training Results - Epoch: 24, acc: 1.000, loss: 0.028
+Validation Results - Epoch: 24, acc: 0.988, loss: 0.036
+Training Results - Final: acc: 0.993, loss: 0.029
+Validation Results - Final: acc: 0.988, loss: 0.037
