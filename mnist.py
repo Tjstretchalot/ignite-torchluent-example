@@ -99,7 +99,8 @@ def train(lr_sweep=False):
     val_loader = torch.utils.data.DataLoader(val_set, batch_size=64, shuffle=False)
 
     optimizer = torch.optim.SGD(model.parameters(), lr=0.02) # lr value irrelevant here
-    cycle_time = len(train_loader) * 6
+    cycle_time_epochs = 6
+    cycle_time = len(train_loader) * cycle_time_epochs
     scheduler = param_scheduler.LinearCyclicalScheduler(optimizer, 'lr', 0.001, 0.03, cycle_time)
 
     loss = torch.nn.CrossEntropyLoss()
@@ -138,7 +139,8 @@ def train(lr_sweep=False):
             engine.Events.ITERATION_COMPLETED,
             functools.partial(store_lr_vs_acc, state))
 
-    trainer.run(train_loader, max_epochs=cycle_time // 2 if lr_sweep else cycle_time * 4)
+    trainer.run(train_loader, max_epochs=(cycle_time_epochs // 2
+                                          if lr_sweep else cycle_time_epochs * 4))
 
     evaluator.run(train_loader)
     metrics = evaluator.state.metrics # pylint: disable=no-member
